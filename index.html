@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรเเกรมบีบอัดโฟลเดอร์ให้เป็นไฟล์ .ZIP</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="container">
+            <h1>โปรเเกรมบีบอัดโฟลเดอร์ให้เป็นไฟล์ .ZIP</h1>
+            <p>อัพโหลดโพลเดอร์ของคุณที่นี่...</p>
+
+            <input type="file" id="folderInput" webkitdirectory mozdirectory directory multiple >
+
+            <button onclick="zipFolder()">บีบอัดโฟลเดอร์</button>
+            <p id="status"></p>
+
+        </div>
+    </div>
+
+    <!-- JsZip JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
